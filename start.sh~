@@ -47,6 +47,9 @@ while true; do
         * ) echo "Please connect your OnePlus one";;
     esac
 done
+echo "Downloading recovery.img..."
+sleep "2"
+wget https://raw.githubusercontent.com/mariogrip/easyroot-opo/master/recovery.img
 while true; do
     read -p "Are you ready to root your phone? (Y/N) " yn
     case $yn in
@@ -55,8 +58,6 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-echo "Downloading recovery.img"
-wget https://raw.githubusercontent.com/mariogrip/easyroot-opo/master/recovery.img
 fastboot boot recovery.img
 adb kill-server
 echo "Starting fastboot, please wait..."
