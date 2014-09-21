@@ -55,6 +55,8 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+echo "Downloading recovery.img"
+wget https://raw.githubusercontent.com/mariogrip/easyroot-opo/master/recovery.img
 fastboot boot recovery.img
 adb kill-server
 echo "Starting fastboot, please wait..."

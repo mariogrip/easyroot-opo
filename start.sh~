@@ -55,8 +55,8 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-#fastboot boot recovery.img
-#adb kill-server
+fastboot boot recovery.img
+adb kill-server
 echo "Starting fastboot, please wait..."
 sleep "10"
 echo "TWRP shuld be booted on your OnePlus now, now you need to Press Install, then you need to find and press UPDATE-SuperSU-vX.XX.zip that you placed on your OnePlus, then swipe to flash, when thats done, go back and choose reboot, then system..."
