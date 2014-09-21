@@ -22,12 +22,11 @@ echo "This will install Nexus tools (adb and fastboot)"
 while true; do
     read -p "Do you wish to install Nexus tools? (Y/N) " yn
     case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
+        [Yy]* ) bash <(curl https://raw.githubusercontent.com/corbindavenport/nexus-tools/master/install.sh); break;;
+        [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
-bash <(curl https://raw.githubusercontent.com/corbindavenport/nexus-tools/master/install.sh)
 echo "Done installing nexus tools"
 echo ""
 echo "Starting the root progess"
