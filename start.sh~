@@ -10,11 +10,10 @@ done
 echo ""
 echo "Now you need to download and Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one. (Find the link at readme file)"
 while true; do
-    read -p "Did you Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one? (Y/N) " yn
+    read -p "Did you Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one? (Y/N) " y
     case $yn in
         [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) echo "You need to Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one in order to make this work!";;
     esac
 done
 echo ""

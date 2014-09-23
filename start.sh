@@ -11,7 +11,7 @@ echo ""
 echo "Now you need to download and Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one. (Find the link at readme file)"
 while true; do
     read -p "Did you Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one? (Y/N) " y
-    case $yn in
+    case $y in
         [Yy]* ) break;;
         * ) echo "You need to Place the UPDATE-SuperSU-vX.XX.zip on your OnePlus one in order to make this work!";;
     esac
@@ -32,7 +32,7 @@ echo "Starting the root progess"
 echo "Please set your OnePlus one in Fastboot mode (if you dont know how to do this, read the forum post.)"
 while true; do
     read -p "Is your phone in fastboot mode? (Y/N) " y
-    case $yn in
+    case $y in
         [Yy]* ) break;;
         * ) echo "Please set your OnePlus one in Fastboot mode...";;
     esac
@@ -40,14 +40,14 @@ done
 echo "Please connect your OnePlus one to your pc using a USB-Cable?"
 while true; do
     read -p "is your phone in Connected? (Y/N) " y
-    case $yn in
+    case $y in
         [Yy]* ) break;;
         * ) echo "Please connect your OnePlus one";;
     esac
 done
 echo "Downloading recovery.img..."
 sleep "2"
-wget https://raw.githubusercontent.com/mariogrip/easyroot-opo/master/recovery.img
+#wget https://raw.githubusercontent.com/mariogrip/easyroot-opo/master/recovery.img
 while true; do
     read -p "Are you ready to root your phone? (Y/N) " yn
     case $yn in
