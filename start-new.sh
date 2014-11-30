@@ -1,7 +1,7 @@
 clear
 echo "Starting Easyroot for OnePlus One..."
 while true; do
-    read -p "Do you understand that there is an risk for bricking your OnePlus One? (Y/N) " yn
+    read -p "Do you understand that there is a risk for bricking your OnePlus One? (Y/N) " yn
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
@@ -18,10 +18,10 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-echo "Done installing nexus tools"
+echo "Done installing Nexus tools"
 echo ""
-echo "Starting the root progess"
-echo "Please set your OnePlus one in Fastboot mode (if you dont know how to do this, read the forum post.)"
+echo "Starting the root process"
+echo "Please set your OnePlus One in Fastboot mode (if you dont know how to do this, read the forum post.)"
 while true; do
     read -p "Is your phone in fastboot mode? (Y/N) " y
     case $y in
@@ -29,12 +29,12 @@ while true; do
         * ) echo "Please set your OnePlus one in Fastboot mode...";;
     esac
 done
-echo "Please connect your OnePlus one to your pc using a USB-Cable?"
+echo "Please connect your OnePlus One to your PC using a USB-Cable?"
 while true; do
-    read -p "is your phone in Connected? (Y/N) " y
+    read -p "Is your phone connected? (Y/N) " y
     case $y in
         [Yy]* ) break;;
-        * ) echo "Please connect your OnePlus one";;
+        * ) echo "Please connect your OnePlus One";;
     esac
 done
 echo "Downloading recovery.img..."
@@ -51,8 +51,8 @@ while true; do
 done
 fastboot oem unlock
 echo ""
-echo "You bootloader is now unloced."
-echo "The phone will reboot. Wait until the phone has fully booted up into android, then adjust the following settings on the phone:"
+echo "You bootloader is now unlocked."
+echo "The phone will reboot. Wait until the phone has fully booted up into Android, then adjust the following settings on the phone:"
 echo "USB Debugging - On your phone go to Settings > About phone > Tap on Build number 7 times. This will enable Developer options. Now go back to Settings > Developer options > Enable USB debugging"
 echo "Disable CM Recovery Protection - On your phone go to Settings > Developer options. Then disable the 'Update recovery with system updates' option."
 while true; do
@@ -63,17 +63,17 @@ while true; do
     esac
 done
 echo ""
-echo "Please set your OnePlus one in Fastboot mode (if you dont know how to do this, read the forum post.)"
+echo "Please set your OnePlus One in fastboot mode (if you dont know how to do this, read the forum post.)"
 while true; do
     read -p "Is your phone in fastboot mode? (Y/N) " y
     case $y in
         [Yy]* ) break;;
-        * ) echo "Please set your OnePlus one in Fastboot mode...";;
+        * ) echo "Please set your OnePlus One in Fastboot mode...";;
     esac
 done
-echo "Please connect your OnePlus one to your pc using a USB-Cable?"
+echo "Please connect your OnePlus one to your PC using a USB-Cable?"
 while true; do
-    read -p "is your phone in Connected? (Y/N) " y
+    read -p "Is your phone connected? (Y/N) " y
     case $y in
         [Yy]* ) break;;
         * ) echo "Please connect your OnePlus one";;
@@ -112,5 +112,5 @@ while true; do
         * ) echo "You need to do this step in order to root your phone...";;
     esac
 done
-echo "your OnePlus is now rooted :)"
+echo "Your OnePlus is now rooted :)"
 sleep "5"
